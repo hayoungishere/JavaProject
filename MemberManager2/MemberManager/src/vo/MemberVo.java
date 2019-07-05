@@ -56,8 +56,8 @@ public class MemberVo {
 	}
 	@Override
 	public String toString() {
-		return "[No=" + no + ",\tID=" + id + ",\tÁÖ¼Ò=" + address + ",\tÀüÈ­¹øÈ£="
-				+ phoneNumber + ",\t³ªÀÌ=" + age + "]";
+		return "Member [No=" + no + ", ID=" + id + ", ì£¼ì†Œ=" + address + ", í•¸ë“œí°="
+				+ phoneNumber + ", ë‚˜ì´=" + age + "]";
 	}
 	
 	

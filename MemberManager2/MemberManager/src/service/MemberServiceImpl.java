@@ -3,10 +3,10 @@ package service;
 import vo.MemberVo;
 
 public interface MemberServiceImpl {
-	public void registMember();
+	public int registMember();
 	public void  selectMembers();
 	public void selectMember();
-	public void updateMember();
-	public void deleteMember();
+	public int updateMember();
+	public int deleteMember();
 	
 }

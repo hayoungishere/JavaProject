@@ -15,7 +15,7 @@ public class MainClass {
 		while(true) {
 			System.out.println("====회원관리 프로그램====");
 			System.out.println("메뉴 : 1.회원정보(전체)");
-			System.out.println("         2.회원정보조회");
+			System.out.println("         2.회원정보");
 			System.out.println("         3.회원등록");
 			System.out.println("         4.회원정보수정");
 			System.out.println("         5.회원삭제");
@@ -25,19 +25,23 @@ public class MainClass {
 			int menuSelect = sc.nextInt();
 			if(menuSelect == 1) {
 				msi.selectMembers();
-				
 			}else if(menuSelect ==2) {
 				msi.selectMember();
-			
 			}else if(menuSelect==3) {
-				msi.registMember();
-				
+				int result = msi.registMember();
+				if(result == 1) {
+					System.out.println("회원정보 1건이 등록되었습니다.");
+				}
 			}else if(menuSelect==4) {
-				 msi.updateMember();
-				
-}else if(menuSelect==5) {
-				msi.deleteMember();
-				
+				int result = msi.updateMember();
+				if(result == 1) {
+					System.out.println("회원정보 1건이 수정되었습니다.");
+				}
+			}else if(menuSelect==5) {
+				int result = msi.deleteMember();
+				if(result == 1) {
+					System.out.println("회원정보 1건이 삭제되었습니다.");
+				}
 			}else if(menuSelect==0){
 				break;
 			}else {

@@ -37,7 +37,6 @@ public class ManagerClass {
 		work = scanner.nextInt();
 		
 		
-		
 		if(work==1) {
 			manager.searchUser();
 			
@@ -57,7 +56,12 @@ public class ManagerClass {
 		}
 	}
 	
+	
 	public void showClientView() {
+		
+		
+		
+		
 		
 		
 	}
