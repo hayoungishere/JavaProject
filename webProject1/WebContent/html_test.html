@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>190708 HTML 실습</title>
+
+<style type="text/css">
+	div{
+	background:#E59866; 
+	width:100px;
+	height:40px;
+	}
+	span{
+		background: red;
+		width:100px;
+		height:40px;
+		/*display:block;  block 으로 지정하면 div와 같은 역할을 하게된다.*/
+	}
+	.div_class{
+		font-size:20px;
+		background:#E6B0AA;
+	}
+	
+	#span_id{
+		backgournd:#76448A;
+	}
+</style>
+</head>
+<body>
+<a href="link.html">link.html 로 이동하기</a>
+	<div class="div_class"> <!--  Block 형태의 태그 ==> 넓이, 높이 조정이 가능하다.
+				줄바꿈, 띄어씌기 적용가능 -->
+		div1 tag
+	</div>
+	<div> div2 tag</div>
+
+	<span id="span_id"> <!-- inline 형태의 태그 ==> 넓이, 높이 조정이 불가능하다.
+				줄바꿈, 띄어씌기 적용 불가능  -->
+	span1 tag
+	</span>
+	<span>span2 tag</span>
+	
+	
+	<div style="background : #D6EAF8; border:1px solid; width :100px; height:100px">
+
+		<div> 행 </div>
+		<span> 1 열 </span>
+		<span> 2 열 </span>
+	</div>
+	<br>
+	   <table border="1"height="100" width="300"><!-- border 테이블 테두리 굵기 -->
+      <tr><!-- tr태그 : 행 -->
+         <th>목차1</th><!-- th태그 : 열 헤더값(굵기, 가운데 정렬) -->
+         <th>목차2</th>
+      </tr>
+      <tr>
+         <td>내용1</td>
+         <td>내용2</td>
+      </tr>
+      <tr>
+         <td colspan ="2">열 합침</td>
+      </tr>
+      <tr>
+         <td rowspan="2">행 합침</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>2</td>
+      </tr>
+   </table>
+   <form action=""method="get">
+      
+      <fieldset> <legend> login </legend>
+      ID:<input type ="text"name="id"/><br/><!-- 한줄 코딩할 때 습관적으로 /를 입력해서 닫아줌 -->
+      PW:<input type ="password"name="pw"/><br/>
+      </fieldset>
+      
+      <input type="button"value="버튼1"/><!-- 폼태그 밖에서 사용-->
+      <input type="submit"value="전송"/><!-- 폼태그 안에서 사용-->
+      
+      <input type="radio"name="radio"value="radio1"/>radio1<!-- radio는 둘중 하나의 값만 체크할 수 있음 -->
+      <input type="radio"name="radio"value="radio2"/>radio2<!-- name값이 꼭 동일해야함-->
+      <br>
+      <input type="checkbox"name="checkbox"value="checkbox1"/>checkbox1
+      <input type="checkbox"name="checkbox"value="checkbox2"/>checkbox2
+      <!-- checkbox는 여러개의 값을 선택할 때 사용 -->
+      <!-- name이 꼭 동일해야함, value 값이 실제 넘어가는 값 -->
+      <br/>
+      <input type="hidden"value="hidden"/><!-- hidden 값은 화면에는 안보이지만 실제 넘어가야할 값 -->
+      <input type="date" / >
+      <input type="file" / >
+    </form>
+      <br>
+      
+      <select>
+      	<option value="op1"> option1 </option>
+      	<option value="op2"> option2 </option>    
+      </select>
+      <br>
+      
+      <img src="img/고래.jpg" alt="이미지가 존재하지 않습니다." width="80" hegith="100"/> <!--  alt :: alert 이미지가 없을때 띄워줄 text를 적어주면 된다. -->
+      <!--  상대경로 :: 자신이 위치한 웹화면으로 부터 위치를 찾는 방법이다. -->
+      <!--  폴더 구분은 '/'을 사용, '../'은 한 단계 상위폴더를 의미 -->
+      <!--  절대경로는 잘 사용하지 않는다. -->
+      
+      <p>
+     	안녕하세요. 새로운 문단1을 생성한다.
+      </p>
+     
+      <p>
+     	안녕하세요. 새로운 문단2을 생성한다.
+      </p> 
+      
+      <pre>
+띄어쓰기 자유롭게 된다.
+안녕하세요
+엔터도 된다.
+	</pre>
+      
+      jsp&amp;servlet &lt; 화살괄호 적용 &gt;
+      <!--  &amp; "&" | &lt; "<" | &gt; ">" -->
+     <br>
+      ul태그(unordered list)는 점으로 나오는 태그
+      <ul>
+      	<li>1</li>
+      	<li>2</li>
+      	<li>3</li>
+      </ul>
+      
+      <br>      
+      ol태그(ordered list)는 숫자로 나오는 태그
+      
+      <ol>
+      	<li>1</li>
+      	<li>2</li>
+      	<li>3</li>
+      </ol>
+      
+      
+      <br>
+      
+      <strong> 강조된 </strong> 단어입니다.
+		<p> <strong>Hello  </strong> html	</p>
+
+</body>
+</html>
