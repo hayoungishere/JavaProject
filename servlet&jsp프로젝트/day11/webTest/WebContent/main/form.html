@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>form 페이지 테스트</title>
+</head>
+<link rel="stylesheet" href="form.css"/>
+<style>
+td {
+	color:blue;
+}
+tr {
+	color:blue;
+	font-size:30px;
+}
+</style>
+<body>
+	<form action="result.html" method="GET"><!-- name -->
+		<h1>로그인 창</h1>
+		<h1 id = "login_h1_id" class="login_h1_class">로그인 하세요</h1>
+		<h1 class="login_h1_class1">로그인 화면</h1>
+		<div>
+			<h1 class="login_h1_class1">로그인</h1>
+			<h1>로그인2</h1>
+		</div>
+		<table border = "1">
+			<tr>
+				<td style="font-size:10px; color:red;">ID</td>
+				<td><input type="text" name="id" value=""></td>
+			</tr>
+			<tr>
+				<td>PW</td>
+				<td><input type="password" name ="pwd" value=""></td>
+			</tr>
+		</table>
+		<input type="submit" value="전송"/>
+	</form>
+
+</body>
+</html>

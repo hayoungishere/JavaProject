@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1" height = "100" width ="300"><!-- border 테이블 태두리 굵기 -->
+		<tr><!-- tr태그 : 행 -->
+			<th>목차1</th> <!-- th태그 : 열 헤더값(굵기, 가운데 정렬 -->
+			<th>목차2</th>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td colspan="2">열 합침</td>
+		</tr>
+		<tr>
+			<td rowspan="2">행 합침</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+		</tr>
+	</table>
+	<form action="" method="get">
+	 	ID: <input type="text" name="id"/><br/>
+	 	PW: <input type="password" name ="pw"/><br/>
+		<input type="button" value="버튼1"/>
+		<input type="submit" value="전송"/><br/>
+		<input type="radio" name="radio" value="radio1"/>radio1<!-- radio는 둘중 하나의 값만 체크 할수 있음 -->
+		<input type="radio" name="radio" value ="radio2"/>radio2<!-- name값이 꼭 동일해야함 -->
+		<br/>
+		<input type="checkbox" name="checkbox" value="checkbox1"/>checkbox1
+		<input type="checkbox" name ="checkbox" value="checkbox2"/>checkbox2
+		<!-- checkbox는 여러개의 값을 선택할때 사용 -->
+		<!-- name 값이 동일해야함, value 값이 실제 넘어가는 값 -->
+		<br/>
+		<input type="hidden" value="hidden"/><!-- hidden 값은 화면에는 안보이지만 실제 넘어가야할 값을 지정할때 -->
+	</form>
+</body>
+</html>

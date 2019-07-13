@@ -17,19 +17,11 @@
     <url-pattern>/First</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.bigdata.mvc.LoginServlet</servlet-class>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.bigdata.mvc.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/Login</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>JoinServlet</servlet-name>
-    <servlet-class>com.bigdata.mvc.JoinServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>JoinServlet</servlet-name>
-    <url-pattern>/Join</url-pattern>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
   </servlet-mapping>
 </web-app>
