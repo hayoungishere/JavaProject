@@ -10,6 +10,8 @@
 
 <link rel="stylesheet" type="text/css" href="css/join.css"/>
 <script type="text/javascript" src="script2.js"></script>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
+
 </head>
 <body>
 
@@ -32,7 +34,7 @@
                 
                     <label class="signup-form__icon-box">
                    	 You can't update your id.
-                        <input type="text" id="userid" name="id" value="<%=member.getId()%>" autocomplete="id" class="signup-form__input user signup-form__input--active"  minlength="3" maxlength="12" pattern="[A-Za-z0-9]+" title="Your Password must include only numbers and letters."  readonly>
+                        <input type="text" id="userid" name="id" value=${wmvo.id} autocomplete="id" class="signup-form__input user signup-form__input--active"  minlength="3" maxlength="12" pattern="[A-Za-z0-9]+" title="Your Password must include only numbers and letters."  readonly>
                     </label>
                                     
                    <label class="signup-form__icon-box">

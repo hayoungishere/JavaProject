@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>회원정보 수정완료</title>
 </head>
 <body>
  <h1>회원정보 수정이 완료되었습니다.</h1>

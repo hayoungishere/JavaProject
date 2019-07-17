@@ -7,7 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>MemberList jsp</title>
-</head>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
+<%@ taglib uri ="http://java.sun.com/jsp/jstl/functions" prefix="fn" %></head>
 <body>
 
 <div><h2>회원 전체 정보</h2></div>
@@ -23,30 +24,21 @@
 				<th>관리자여부</th>
 			</tr>
 
-		
-	<% 
-		List<Web_memberVO> wmlist = (List<Web_memberVO>)request.getAttribute("wmlist");	
-		for(Web_memberVO vo : wmlist){
-			%>
-		<tr>
-			<td><%=vo.getNo()%></td>
-			<td><%=vo.getId()%></td>
-			<td><%=vo.getName()%></td>
-			<td><%=vo.getAddress()%></td>
-			<td><%=vo.getPhone_number()%></td>
-			<td><%=vo.getAge()%></td>
-			<td><%=vo.getJoin_dt()%></td>
-			
-			<%if( vo.getAdmin_yn().equalsIgnoreCase("y")){ %> 
-				<td>관리자</td>
-			<% }else { %>
-				<td>일반회원</td>
-			<%} %>
-			
-		</tr>
-			<% 
-		}
-	%>	
+		<c:forEach items="${wmlist}" var="wmvo">	
+			<tr>
+				<td>${wmvo.no}</td>
+				<td>${wmvo.id}</td>
+				<td>${wmvo.name}</td>
+				<td>${wmvo.address}</td>
+				<td>${wmvo.phone_number}</td>
+				<td>${wmvo.age}</td>
+				<td>${wmvo.join_dt}</td>
+				<c:choose>
+					<c:when test="${fn:toLowerCase(wmvo.admin_yn) eq 'y'}"> <td> 관리자 </td>	</c:when>
+					<c:otherwise> <td>일반회원 </td> </c:otherwise>
+				</c:choose>
+			</tr>	
+		</c:forEach>	
 		</table>
 		
 </body>

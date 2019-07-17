@@ -5,13 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Main menu</title>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
 
 </head>
 <body>
-	<% String id = (String)session.getAttribute("id"); %>
-
 	<div>
-		<span><%=id %>님 환영합니다.</span>
+		<span>${id}님 환영합니다.</span>
 		<span><a href="Logout">로그아웃</a></span>
 	</div>
 	<div>
@@ -22,10 +21,7 @@
 		<span><a href ="removeConfirm.jsp">회원탈퇴</a></span>	
 		
 	</div>
-	
 
-	
-	
 	
 </body>
 </html>
